@@ -1,6 +1,18 @@
 <div align="center">
 
-![icon](build/icon.ico)
+<img src="build/icon-1024.png" alt="IELTS Simulator" width="88">
+
+# IELTS Simulator
+
+**把雅思机考搬进一个文件夹：完全离线的绿色便携版。**
+
+1,792 篇练习单元 · 18,169 道题 · 64 套整卷模考 · 574 段听力音频 · 零联网 · 解压即用
+
+[![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-17283B?style=flat-square)](https://github.com/H1DDENADM1N/IELTS-Simulator/releases)
+[![License: AGPL--3.0](https://img.shields.io/badge/License-AGPL--3.0-AD5038?style=flat-square)](LICENSE)
+![Platform: Windows_x64](https://img.shields.io/badge/Platform-Windows_x64-2F5D50?style=flat-square)
+![Network: none](https://img.shields.io/badge/Network-none-2F5D50?style=flat-square)
+![Install: none](https://img.shields.io/badge/Install-none-2F5D50?style=flat-square)
 
 </div>
 
