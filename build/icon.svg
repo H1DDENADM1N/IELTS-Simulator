@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IELTS Simulator 应用图标（母版）：蓝底 + 批改过的试卷 + 绿色对勾。
+  由 tools/icon.mjs 渲染为 build/icon-1024.png 与多尺寸 build/icon.ico。
+  改动后运行：node tools/icon.mjs --force
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3F78EA"/>
+      <stop offset="0.5" stop-color="#2456C4"/>
+      <stop offset="1" stop-color="#15367F"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.26" cy="0.14" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.26"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="paperShadow" x="-40%" y="-40%" width="180%" height="190%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#071B46" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="232" fill="url(#tile)"/>
+  <rect width="1024" height="1024" rx="232" fill="url(#sheen)"/>
+
+  <!-- 试卷：右上角折角 -->
+  <path d="M328 206H616L742 332V736A46 46 0 0 1 696 782H328A46 46 0 0 1 282 736V252A46 46 0 0 1 328 206Z"
+        fill="#FBFCFE" filter="url(#paperShadow)"/>
+  <path d="M616 206 742 332H616Z" fill="#D9E4F7"/>
+  <path d="M616 206 742 332" fill="none" stroke="#BFD1EC" stroke-width="4"/>
+
+  <!-- 卷面：标题条 + 两行正文 -->
+  <rect x="354" y="282" width="216" height="40" rx="20" fill="#2456C4"/>
+  <rect x="354" y="366" width="296" height="26" rx="13" fill="#D9E4F5"/>
+  <rect x="354" y="418" width="238" height="26" rx="13" fill="#D9E4F5"/>
+
+  <!-- 批改标记 -->
+  <path d="M366 566 462 660 654 452" fill="none" stroke="#17A34A" stroke-width="76"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
