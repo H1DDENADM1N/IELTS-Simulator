@@ -1,0 +1,25 @@
+# 依赖、构建产物与 Electron 运行时
+node_modules/
+dist/
+dist-portable/
+runtime/
+.local/
+.next/
+*.tsbuildinfo
+*.tgz
+*.7z
+
+# 用户数据（成绩、错题、草稿、缓存、日志）
+userdata/
+*.log
+.DS_Store
+
+
+# 应用图标：位图默认不入库，build/ 下的图标产物例外
+!build/icon.ico
+!build/icon-1024.png
+
+# 题库数据：只保留两个拆分源文件，其余（拆分产物、媒体、运行索引）全部忽略
+data/*
+!data/units.json
+!data/mock-papers.json

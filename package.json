@@ -1,0 +1,33 @@
+{
+  "name": "ielts-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "description": "IELTS Simulator · 雅思 / 四六级真题离线练习程序",
+  "scripts": {
+    "dev": "vite",
+    "split": "node tools/split-data.mjs",
+    "build": "vite build",
+    "dev:app": "node tools/dev.mjs",
+    "bundle": "node tools/pack.mjs",
+    "pack7z": "node tools/pack7z.mjs",
+    "selftest": "node tools/selftest.mjs",
+    "selftest:unit": "node tools/selftest.mjs --no-window"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "5.7.3",
+    "vite": "^7.3.0",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
